@@ -8,7 +8,7 @@
 %global tapsetroot %{_prefix}/share/systemtap
 %global tapsetdir %{tapsetroot}/tapset/%{_build_cpu}
 
-Name:          %{_base}js
+Name:          cpanel-%{_base}js
 Version:       6.6.0
 Release:       %{_build_number}%{?dist}
 Provides:      %{_base}js(engine)
@@ -55,8 +55,8 @@ Group:         Development/Libraries
 License:       MIT License
 URL:           http://nodejs.org
 Obsoletes:     npm
-Provides:      npm
-Requires:      nodejs
+Provides:      npm cpanel-npm
+Requires:      cpanel-nodejs
 
 %description npm
 Node.js is a server-side JavaScript environment that uses an asynchronous event-driven model.
